@@ -21,7 +21,7 @@ const Footer = () => {
             })}
           </ul>
         </div>
-        <div className="social__menu">
+        {/* <div className="social__menu">
           <ul>
             {socialItems.map((item, index) => {
               return (
@@ -30,14 +30,14 @@ const Footer = () => {
                     href={item.path}
                     target="_blank"
                     rel="nofollow noreferrer noopener"
-                  >
+                  > our
                     {item.icon}
                   </a>
                 </li>
               )
             })}
           </ul>
-        </div>
+        </div> */}
         <div className="copyright">
           <p>
             Designed & developed by{" "}
