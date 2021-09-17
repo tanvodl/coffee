@@ -8,12 +8,12 @@ require("dotenv").config({
 })
 module.exports = {
   siteMetadata: {
-    title: "Barcadia",
-    description: "A super-fast site using GatsbyJS",
-    author: "Morgan Baker",
-    twitterUsername: "@dave",
+    title: "COFFEE TO SHARE",
+    description: "Chuyên Trang chia sẻ kiến thức Digital và Kiếm tiền Online",
+    author: "Tân Võ",
+    twitterUsername: "@tanvodl",
     image: "/yellow-metal-design-decoration.jpg",
-    siteUrl: "https://barcadia.netlify.com",
+    siteUrl: "https://coffeetoshare.gatsby.io",
   },
   /* Your site config here */
   plugins: [

@@ -3,7 +3,7 @@ import { createGlobalStyle } from "styled-components"
 import NavModule from "./NavModule/NavModule"
 import AnimMain from "./AnimMain/AnimMain"
 import Footer from "./Footer/Footer"
-import "@fontsource/heebo"
+import "@fontsource/open-sans"
 import { motion } from "framer-motion"
 
 const GlobalStyle = createGlobalStyle`

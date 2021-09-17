@@ -17,6 +17,7 @@
     "@contentful/rich-text-react-renderer": "^13.4.0",
     "@contentful/rich-text-types": "^14.1.2",
     "@fontsource/heebo": "^4.5.0",
+    "@fontsource/open-sans": "^4.5.0",
     "babel-plugin-styled-components": "^1.13.2",
     "dotenv": "^8.6.0",
     "framer-motion": "^4.1.17",
