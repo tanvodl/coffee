@@ -24,6 +24,8 @@ const Blog = ({ data }) => {
     },
   }
 
+  const { authorname } = data.post.postauthor
+
   return (
     <>
       <Seo title={title} />
@@ -31,6 +33,7 @@ const Blog = ({ data }) => {
         <section>
           <BlogSingleStyles>
             <h1 className="blogsingle__title">{title}</h1>
+            <p className="blogsingle__author">{authorname}</p>
             <p className="blogsingle__date">{published}</p>
             <article className="blogsingle__content">
               {renderRichText(richText, options)}
@@ -52,6 +55,9 @@ export const query = graphql`
       published(formatString: "MMMM Do YYYY")
       richText {
         raw
+      }
+      postauthor {
+        authorname
       }
     }
   }
