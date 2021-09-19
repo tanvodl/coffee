@@ -25,6 +25,7 @@ const Blog = ({ data }) => {
   }
 
   const { authorname } = data.post.postauthor
+  const { testfield } = data.post.childContentfulPostsTestfieldTextNode
 
   return (
     <>
@@ -35,12 +36,15 @@ const Blog = ({ data }) => {
             <h1 className="blogsingle__title">{title}</h1>
             <p className="blogsingle__author">{authorname}</p>
             <p className="blogsingle__date">{published}</p>
-            <article className="blogsingle__content">
+            <article className="blogsingle__content_test">
+            {testfield}
+            </article>
+            {/* <article className="blogsingle__content">
               {renderRichText(richText, options)}
               <div className="blogsingle__back">
                 <Button to="/blogs" text="Back to news" as={Link} />
               </div>
-            </article>
+            </article> */}
           </BlogSingleStyles>
         </section>
       </Layout>
@@ -58,6 +62,9 @@ export const query = graphql`
       }
       postauthor {
         authorname
+      }
+      childContentfulPostsTestfieldTextNode {
+        testfield
       }
     }
   }

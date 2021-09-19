@@ -63,6 +63,12 @@ export const BlogSingleStyles = styled.article`
       padding-top: 20px;
     }
 
+    &__content_test {
+      border-top: 2px solid var(--primary);
+      padding-top: 20px;
+    }
+
+
     &__back {
       padding-top: 40px;
     }

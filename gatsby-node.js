@@ -19,6 +19,9 @@ exports.createPages = async ({ graphql, actions }) => {
             postauthor {
               authorname
             }
+            childContentfulPostsTestfieldTextNode {
+              testfield
+            }
           }
         }
       }
